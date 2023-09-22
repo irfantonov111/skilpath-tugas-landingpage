@@ -1,0 +1,393 @@
+/* Tambahkan kode CSS kalian di file ini */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header{
+    position:fixed;
+    right:0;
+    top:0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    
+}
+
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #4CAF4F;
+}
+.navlist{
+    display: flex;
+    
+}
+
+
+.navlist a{
+    color:#4CAF4F;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 5px #4CAF4F;
+
+}
+
+
+#menu-icon{
+    color:white;
+    font-size:35px;
+    z-index: 10001;
+    cursor:pointer;
+    display: none;
+}
+
+.hero{
+    height:100%;
+    width: 100%;
+    min-height: 100vh;
+    background: white ;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 40;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1;
+    color: #4CAF4F;
+    margin: 0 0 45px;    
+}
+
+.hero-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1;
+    color: #4CAF4F;
+    margin: 0 0 45px;    
+}
+
+ .hero-text p{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 40px;
+ }
+ 
+ .hero-image img{
+    margin-right: 40px;
+    width: 500px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #4CAF4F;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(10px);
+}
+
+.hero-text a.ctaa{
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 20px;
+    color: black;
+    
+    
+}
+
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icon{
+    position: absolute;
+    top:50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+
+}
+.icon i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: #4CAF4F;
+transition: all .50s ease;
+
+}
+
+.icon i:hover{
+color: #4d9559;
+transform: translateY(-5px);
+}
+
+.scroll-down i{ 
+    display: block;
+    padding: 12px;
+    font-size: 12px;
+    color: #4CAF4F;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+@media ( max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-dowm{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+
+@media ( max-width: 1460px){
+section{
+    padding: 0 12%;
+    transition: .2s;
+}
+}
+
+
+@media ( max-width: 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    }
+
+    @media (max-width: 1195px){
+        section{
+            padding: 0 3%;
+            transition:  .2s;
+        }
+        .hero-text{
+            padding-top: 115px;
+        }
+        .hero-img{
+            text-align: center;
+        }
+        .hero-img img{
+            width: 450px;
+            height: auto;
+        }
+        .hero{
+            height: 100%;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+        }
+        .icon{
+            display: none;
+        }
+        .scroll-dowm{
+            display: none;
+        }
+    }
+
+    
+@media ( max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50;
+        transition: all .55s ease;
+    }
+    .navlist a{
+       
+        margin-left: 0;
+        display: block;
+        margin: 8px 0;
+       
+    }
+    .navlist.open{
+        right: 0;
+
+    }
+    }
+
+    @media ( max-width: 680px){
+        .hero-img{
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .form-input {
+        padding: 2em;
+        margin: 1em auto;
+        width: 30em;
+        background: #fff;
+        border-radius: 3px;
+       
+      }
+.form-input p{
+    color: #4CAF4F;
+}
+
+.form-input label{
+    color: #4CAF4F;
+}
+     
+.form-input input{
+    color: #4CAF4F;
+}
+       
+      label {
+        font-size: 10pt;
+        color: #555;
+      }
+       
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      textarea {
+        padding: 8px;
+        width: 95%;
+        background: #efefef;
+        border: 0;
+        font-size: 10pt;
+        margin: 6px 0px;
+      }
+       
+      .tombol {
+        background: #4CAF4F;
+        color: #fff;
+        border: 0;
+        padding: 5px 8px;
+      }
+
+      .text-form{
+       text-align: center;
+      
+      }
+      .text-form h2{
+        color: #4CAF4F;
+      }
+
+      .text-form p{
+        color: black;
+      }
+
+      .footer{
+        background-color: #4CAF4F;
+      }
+
+      .footer h4{
+        text-align: center;
+        color: #fff;
+
+      }
+
+      .input-control {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-control input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .input-control input:focus {
+        outline: 0;
+    }
+    
+    .input-control.success input {
+        border-color: #09c372;
+    }
+    
+    .input-control.error input {
+        border-color: #ff3860;
+    }
+    
+    .input-control .error {
+        color: #ff3860;
+        font-size: 9px;
+        height: 13px;
+    }
+
+    #form {
+        width: 300px;
+        margin: 20vh auto 0 auto;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 4px;
+        font-size: 12px;
+    }
